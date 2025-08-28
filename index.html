@@ -8,387 +8,306 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-  <!-- Font Awesome (icons) -->
+  <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
 
-  <link rel="stylesheet" href="style.css" />
-  <meta name="description" content="Panthula Rushika — Web Developer & UI/UX Designer. Projects: Employee Leave Management System, Cisco Packet Tracer network sim. Contact: panthularushika@gmail.com" />
-  :root {
-  --bg:#0b0b0c;
-  --card:#151515;
-  --muted:#bfc3c7;
-  --accent:#ff004f;
-  --accent-2:#2cecf3;
-  --radius:12px;
-  --maxw:1100px;
-  --glass: rgba(255,255,255,0.05);
-  font-family: "Inter", system-ui, sans-serif;
-}
+  <!-- ✅ Inlined CSS -->
+  <style>
+    :root {
+      --bg:#0b0b0c;
+      --card:#151515;
+      --muted:#bfc3c7;
+      --accent:#ff004f;
+      --accent-2:#2cecf3;
+      --radius:12px;
+      --maxw:1100px;
+      --glass: rgba(255,255,255,0.05);
+      font-family: "Inter", system-ui, sans-serif;
+    }
 
-*{margin:0;padding:0;box-sizing:border-box}
-body{background:var(--bg);color:#f4f6f7;line-height:1.6}
-.wrap{max-width:var(--maxw);margin:0 auto;padding:24px}
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{background:var(--bg);color:#f4f6f7;line-height:1.6}
+    .wrap{max-width:var(--maxw);margin:0 auto;padding:24px}
 
-/* Header */
-.site-header{position:sticky;top:0;background:rgba(11,11,12,0.9);backdrop-filter:blur(6px);border-bottom:1px solid rgba(255,255,255,0.05);z-index:100}
-.site-header .wrap{display:flex;align-items:center;justify-content:space-between}
-.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:inherit}
-.brand-img{width:46px;height:46px;border-radius:8px;object-fit:cover}
-.brand-name{font-weight:600}
-#nav-list{list-style:none;display:flex;gap:18px;align-items:center}
-#nav-list a{color:inherit;text-decoration:none;padding:8px 10px;border-radius:6px;font-weight:500}
-#nav-list .nav-link.active{color:var(--accent-2)}
-#nav-list a:hover{color:var(--accent-2)}
-#nav-toggle{display:none;background:none;border:0;color:#fff;font-size:1.3rem}
+    /* Header */
+    .site-header{position:sticky;top:0;background:rgba(11,11,12,0.9);backdrop-filter:blur(6px);border-bottom:1px solid rgba(255,255,255,0.05);z-index:100}
+    .site-header .wrap{display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:inherit}
+    .brand-img{width:46px;height:46px;border-radius:8px;object-fit:cover}
+    .brand-name{font-weight:600}
+    #nav-list{list-style:none;display:flex;gap:18px;align-items:center}
+    #nav-list a{color:inherit;text-decoration:none;padding:8px 10px;border-radius:6px;font-weight:500}
+    #nav-list .nav-link.active{color:var(--accent-2)}
+    #nav-list a:hover{color:var(--accent-2)}
+    #nav-toggle{display:none;background:none;border:0;color:#fff;font-size:1.3rem}
 
-/* Hero */
-.hero{padding:60px 0 80px}
-.hero-grid{display:grid;grid-template-columns:1fr 320px;gap:30px;align-items:center}
-.hero-text .eyebrow{color:var(--muted);font-weight:600;margin-bottom:6px}
-.hero-text h1{font-size:2.3rem;margin-bottom:12px}
-.hero-text h1 span{color:var(--accent-2)}
-.lead{color:var(--muted);margin-bottom:20px}
-.hero-photo img{width:100%;border-radius:14px;border:1px solid rgba(255,255,255,0.1);object-fit:cover}
+    /* Hero */
+    .hero{padding:60px 0 80px}
+    .hero-grid{display:grid;grid-template-columns:1fr 320px;gap:30px;align-items:center}
+    .hero-text .eyebrow{color:var(--muted);font-weight:600;margin-bottom:6px}
+    .hero-text h1{font-size:2.3rem;margin-bottom:12px}
+    .hero-text h1 span{color:var(--accent-2)}
+    .lead{color:var(--muted);margin-bottom:20px}
+    .hero-photo img{width:100%;border-radius:14px;border:1px solid rgba(255,255,255,0.1);object-fit:cover}
 
-/* Buttons */
-.btn-primary,.btn-outline,.btn-resume{display:inline-block;padding:10px 16px;border-radius:8px;font-weight:600;text-decoration:none}
-.btn-primary{background:linear-gradient(90deg,var(--accent),#ff6b84);color:#fff}
-.btn-outline{border:1px solid rgba(255,255,255,0.2);color:#fff}
-.btn-resume{background:var(--accent);color:#fff;padding:8px 14px}
+    /* Buttons */
+    .btn-primary,.btn-outline,.btn-resume{display:inline-block;padding:10px 16px;border-radius:8px;font-weight:600;text-decoration:none}
+    .btn-primary{background:linear-gradient(90deg,var(--accent),#ff6b84);color:#fff}
+    .btn-outline{border:1px solid rgba(255,255,255,0.2);color:#fff}
+    .btn-resume{background:var(--accent);color:#fff;padding:8px 14px}
 
-/* Sections */
-.section{padding:60px 0}
-.section.alt{background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent)}
-h2{font-size:1.5rem;margin-bottom:20px}
+    /* Sections */
+    .section{padding:60px 0}
+    .section.alt{background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent)}
+    h2{font-size:1.5rem;margin-bottom:20px}
 
-/* About */
-.section-grid{display:grid;grid-template-columns:1fr 360px;gap:28px}
-.card{background:var(--card);padding:18px;border-radius:var(--radius);border:1px solid rgba(255,255,255,0.05)}
-.stats-grid{display:grid;gap:10px;font-size:0.9rem}
+    /* About */
+    .section-grid{display:grid;grid-template-columns:1fr 360px;gap:28px}
+    .card{background:var(--card);padding:18px;border-radius:var(--radius);border:1px solid rgba(255,255,255,0.05)}
+    .stats-grid{display:grid;gap:10px;font-size:0.9rem}
 
-/* Skills */
-.skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
-.skill{background:var(--card);padding:16px;border-radius:var(--radius);border:1px solid rgba(255,255,255,0.05)}
+    /* Skills */
+    .skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+    .skill{background:var(--card);padding:16px;border-radius:var(--radius);border:1px solid rgba(255,255,255,0.05);cursor:pointer;transition:all 0.3s ease}
+    .skill:hover{border-color:var(--accent-2)}
+    .skill.active{background:var(--accent-2);color:#0b0b0c;font-weight:600}
 
-/* Skill card default */
-.skill {
-  background: var(--card);
-  padding: 16px;
-  border-radius: 10px;
-  border: 1px solid rgba(255,255,255,0.02);
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
+    /* Projects */
+    .projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+    .project-card{background:var(--card);padding:18px;border-radius:var(--radius);border:1px solid rgba(255,255,255,0.05);transition:0.3s}
+    .project-card:hover{background:var(--accent);transform:translateY(-6px)}
+    .project-card:hover h3,.project-card:hover p{color:#fff}
 
-/* Hover effect */
-.skill:hover {
-  border-color: var(--accent-2);
-}
+    /* Timeline */
+    .timeline{display:flex;flex-direction:column;gap:18px}
+    .timeline-item{display:flex;gap:14px;align-items:flex-start}
+    .timeline-item time{min-width:140px;color:var(--muted);font-weight:600;font-size:0.9rem}
 
-/* Active (clicked) state */
-.skill.active {
-  background: var(--accent-2);
-  color: #0b0b0c;
-  font-weight: 600;
-}
+    /* Contact */
+    .contact-grid{display:grid;grid-template-columns:360px 1fr;gap:20px}
+    .contact-card{background:var(--card);padding:18px;border-radius:var(--radius);border:1px solid rgba(255,255,255,0.05)}
+    .contact-card .social a{color:inherit;margin-right:10px;font-size:1.3rem}
+    .contact-form label{display:block;margin-bottom:12px}
+    .contact-form input,.contact-form textarea{width:100%;padding:10px;border-radius:6px;border:1px solid rgba(255,255,255,0.1);background:transparent;color:#fff}
+    .form-msg{margin-top:10px;font-size:0.9rem;color:#61b752}
 
-/* Projects */
-.projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
-.project-card{background:var(--card);padding:18px;border-radius:var(--radius);border:1px solid rgba(255,255,255,0.05);transition:0.3s}
-.project-card:hover{background:var(--accent);transform:translateY(-6px)}
-.project-card:hover h3,.project-card:hover p{color:#fff}
-.project-link{display:inline-block;margin-top:10px;color:var(--accent-2);font-weight:600;text-decoration:none}
-.project-link:hover{text-decoration:underline;color:#fff}
+    /* Footer */
+    .site-footer{text-align:center;padding:24px 0;color:var(--muted);border-top:1px solid rgba(255,255,255,0.05)}
 
-/* Timeline */
-.timeline{display:flex;flex-direction:column;gap:18px}
-.timeline-item{display:flex;gap:14px;align-items:flex-start}
-.timeline-item time{min-width:140px;color:var(--muted);font-weight:600;font-size:0.9rem}
-
-/* Contact */
-.contact-grid{display:grid;grid-template-columns:360px 1fr;gap:20px}
-.contact-card{background:var(--card);padding:18px;border-radius:var(--radius);border:1px solid rgba(255,255,255,0.05)}
-.contact-card .social a{color:inherit;margin-right:10px;font-size:1.3rem}
-.contact-form label{display:block;margin-bottom:12px}
-.contact-form input,.contact-form textarea{width:100%;padding:10px;border-radius:6px;border:1px solid rgba(255,255,255,0.1);background:transparent;color:#fff}
-.form-msg{margin-top:10px;font-size:0.9rem;color:#61b752}
-
-/* Footer */
-.site-footer{text-align:center;padding:24px 0;color:var(--muted);border-top:1px solid rgba(255,255,255,0.05)}
-
-/* Highlight active menu item */
-.nav-list .nav-link.active {
-  color: var(--accent-2);
-  font-weight: 600;
-}
-.nav-list .nav-link:hover {
-  color: var(--accent-2);
-}
-
-/* Responsive */
-@media(max-width:900px){
-  .hero-grid,.section-grid,.contact-grid{grid-template-columns:1fr}
-  #nav-toggle{display:block}
-  #nav-list{display:none;flex-direction:column;position:absolute;right:20px;top:64px;background:var(--card);padding:16px;border-radius:var(--radius);box-shadow:0 6px 30px rgba(0,0,0,0.5)}
-  #nav-list.show{display:flex}
-}
-@media(max-width:500px){
-  .hero-text h1{font-size:1.6rem}
-  .brand-name{display:none}
-}
+    /* Responsive */
+    @media(max-width:900px){
+      .hero-grid,.section-grid,.contact-grid{grid-template-columns:1fr}
+      #nav-toggle{display:block}
+      #nav-list{display:none;flex-direction:column;position:absolute;right:20px;top:64px;background:var(--card);padding:16px;border-radius:var(--radius);box-shadow:0 6px 30px rgba(0,0,0,0.5)}
+      #nav-list.show{display:flex}
+    }
+    @media(max-width:500px){
+      .hero-text h1{font-size:1.6rem}
+      .brand-name{display:none}
+    }
+  </style>
 </head>
 <body>
+  <!-- HEADER -->
   <header class="site-header">
     <div class="wrap">
       <a class="brand" href="#home">
-        <img src="images/rushikap.png" alt="Rushika logo" class="brand-img">
+        <img src="rushikap.png" alt="Rushika logo" class="brand-img">
         <span class="brand-name">Panthula Rushika</span>
       </a>
-
       <nav id="nav">
         <button id="nav-toggle" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
         <ul class="nav-list" id="nav-list">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
           <li><a class="btn-resume" href="Rushikapanthula__resume.pdf" download>Download Resume</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main>
-    <!-- HERO -->
-    <section id="home" class="hero">
-      <div class="wrap hero-grid">
-        <div class="hero-text">
-          <p class="eyebrow">Web Developer • UI/UX Enthusiast</p>
-          <h1>Hi, I'm <span>Rushika Panthula</span></h1>
-          <p class="lead">I build responsive web apps and clean user interfaces. Currently pursuing B.Tech (CSE) — passionate about UI/UX, web development and networking.</p>
-          <div class="hero-ctas">
-            <a class="btn-primary" href="#projects">See Projects</a>
-            <a class="btn-outline" href="Rushikapanthula__resume.pdf" download>Download Resume</a>
-          </div>
-        </div>
-        <div class="hero-photo">
-          <img src="images/prushika.jpg" alt="Rushika portrait">
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-text">
+        <p class="eyebrow">Web Developer • UI/UX Enthusiast</p>
+        <h1>Hi, I'm <span>Rushika Panthula</span></h1>
+        <p class="lead">I build responsive web apps and clean user interfaces. Currently pursuing B.Tech (CSE).</p>
+        <div class="hero-ctas">
+          <a class="btn-primary" href="#projects">See Projects</a>
+          <a class="btn-outline" href="Rushikapanthula__resume.pdf" download>Download Resume</a>
         </div>
       </div>
-    </section>
+      <div class="hero-photo">
+        <img src="prushika.jpg" alt="Rushika portrait">
+      </div>
+    </div>
+  </section>
 
-    <!-- ABOUT -->
-    <section id="about" class="section">
-      <div class="wrap section-grid">
-        <div>
-          <h2>About Me</h2>
-          <p>I'm a motivated web developer from a close-knit family background. I completed a web development internship at DRDL where I built a Leave Management System using JSP, Java Servlets and MySQL. I enjoy UI/UX design, problem solving and learning new web technologies.</p>
-          <ul class="info-list">
-            <li><strong>Email:</strong> panthularushika@gmail.com</li>
-            <li><strong>Phone:</strong> +91 98482 79520</li>
-            <li><strong>Education:</strong> B.Tech (CSE) — MVSRC (2022–2026)</li>
-          </ul>
-        </div>
-
-        <div class="card card-stats">
-          <h3>Quick facts</h3>
-          <div class="stats-grid">
-            <div><strong>Internship</strong><span>DRDL — Web Dev Intern (Completed)</span></div>
-            <div><strong>CGPA</strong><span>8.5 (current)</span></div>
-            <div><strong>Interests</strong><span>UI/UX, Figma, AI/ML, Networking</span></div>
-            <div><strong>Achievements</strong><span>Organizer — IEEE CodeCrack; RASEFT 2024</span></div>
-          </div>
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="wrap section-grid">
+      <div>
+        <h2>About Me</h2>
+        <p>I'm a motivated web developer. Completed internship at DRDL where I built a Leave Management System using JSP, Servlets, and MySQL.</p>
+        <ul class="info-list">
+          <li><strong>Email:</strong> panthularushika@gmail.com</li>
+          <li><strong>Phone:</strong> +91 98482 79520</li>
+          <li><strong>Education:</strong> B.Tech (CSE) — MVSRC (2022–2026)</li>
+        </ul>
+      </div>
+      <div class="card card-stats">
+        <h3>Quick facts</h3>
+        <div class="stats-grid">
+          <div><strong>Internship</strong><span>DRDL — Web Dev Intern</span></div>
+          <div><strong>CGPA</strong><span>8.5 (current)</span></div>
+          <div><strong>Interests</strong><span>UI/UX, Figma, AI/ML, Networking</span></div>
+          <div><strong>Achievements</strong><span>Organizer — IEEE CodeCrack</span></div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- SKILLS -->
-    <section id="skills" class="section alt">
-      <div class="wrap">
-        <h2>Skills</h2>
-        <div class="skills-grid">
-          <div class="skill">
-            <h4>Frontend</h4>
-            <p>HTML • CSS • JavaScript • Responsive design</p>
+  <!-- SKILLS -->
+  <section id="skills" class="section alt">
+    <div class="wrap">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill"><h4>Frontend</h4><p>HTML • CSS • JavaScript</p></div>
+        <div class="skill"><h4>UI/UX</h4><p>Figma • Wireframing • Prototyping</p></div>
+        <div class="skill"><h4>Backend & DB</h4><p>JSP • Servlets • MySQL</p></div>
+        <div class="skill"><h4>Other</h4><p>Java • Python • Cisco Packet Tracer</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="wrap">
+      <h2>Selected Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-head">
+            <h3>Employee Leave Management System</h3>
+            <p class="tech">HTML • CSS • JS • JSP • MySQL</p>
           </div>
-          <div class="skill">
-            <h4>UI / UX</h4>
-            <p>Figma • Wireframing • Prototyping • Usability</p>
+          <p>Full-stack leave management system built at DRDL internship.</p>
+        </article>
+        <article class="project-card">
+          <div class="project-head">
+            <h3>Data Packet Transfer Simulation</h3>
+            <p class="tech">Cisco Packet Tracer</p>
           </div>
-          <div class="skill">
-            <h4>Backend & DB</h4>
-            <p>JSP • Java Servlets • MySQL</p>
-          </div>
-          <div class="skill">
-            <h4>Other</h4>
-            <p>Java • Python • Cisco Packet Tracer</p>
+          <p>Simulated hybrid network packet transfers and LAN/WAN topologies using Cisco Packet Tracer.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section alt">
+    <div class="wrap">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <time>May 2025</time>
+          <div class="timeline-body">
+            <h4>Web Development Intern — DRDL</h4>
+            <p>Worked on a Leave Management System using JSP, Servlets and MySQL.</p>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="projects" class="section">
-      <div class="wrap">
-        <h2>Selected Projects</h2>
-        <div class="projects-grid">
-          <!-- Project 1 -->
-          <article class="project-card">
-            <div class="project-head">
-              <h3>Employee Leave Management System</h3>
-              <p class="tech">HTML • CSS • JavaScript • JSP • Java • MySQL • Tomcat</p>
-            </div>
-            <p>Full-stack leave management web application to handle requests, approvals, user dashboards and leave history. Implemented secure login, leave balance calculation and admin approval workflow — built during internship at DRDL (May).</p>
-            <details>
-              <summary>Key features</summary>
-              <ul>
-                <li>Employee/admin dashboards</li>
-                <li>Leave request form with validation</li>
-                <li>MySQL-backed persistent storage</li>
-                <li>JSP/Servlets for business logic</li>
-              </ul>
-            </details>
-          </article>
-
-          <!-- Project 2 -->
-          <article class="project-card">
-            <div class="project-head">
-              <h3>End-to-End Data Packet Transfer (Cisco Packet Tracer)</h3>
-              <p class="tech">Cisco Packet Tracer</p>
-            </div>
-            <p>Designed and simulated packet transfer topologies illustrating MAC/IP addressing and wired & wireless LANs. Demonstrated realistic data flow and hybrid network setups.</p>
-          </article>
-
-          <!-- Add more projects as needed -->
-        </div>
-      </div>
-    </section>
-
-    <!-- EXPERIENCE / TIMELINE -->
-    <section id="experience" class="section alt">
-      <div class="wrap">
-        <h2>Experience</h2>
-        <div class="timeline">
-          <div class="timeline-item">
-            <time>May 01 — May 30 (Internship)</time>
-            <div class="timeline-body">
-              <h4>Web Development Intern — DRDL</h4>
-              <p>Completed a full-time internship focused on a Leave Management System. Built responsive front-end interfaces and implemented server-side logic using JSP and MySQL. Gained hands-on deployment and debugging experience. (Details in resume.)</p>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <time>2022 — Present</time>
-            <div class="timeline-body">
-              <h4>Undergraduate — Maturi Venkata Subba Rao Engineering College</h4>
-              <p>Pursuing B.Tech (CSE). Current CGPA: 8.5.</p>
-            </div>
+        <div class="timeline-item">
+          <time>2022 — Present</time>
+          <div class="timeline-body">
+            <h4>B.Tech CSE — MVSR Engineering College</h4>
+            <p>Current CGPA: 8.5</p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="section contact-section">
-      <div class="wrap">
-        <h2>Contact</h2>
-        <div class="contact-grid">
-          <div class="contact-card">
-            <h3>Get in touch</h3>
-            <p><i class="fa-solid fa-envelope"></i> panthularushika@gmail.com</p>
-            <p><i class="fa-solid fa-phone"></i> +91 98482 79520</p>
-            <div class="social">
-              <a aria-label="Instagram" href="https://www.instagram.com/rushikapanthula?igsh=MTJ3NjIzeTh4a2o5Nw==" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
-              <a aria-label="LinkedIn" href="https://www.linkedin.com/in/panthula-rushika-a568a9273" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
-            </div>
-            <a class="btn-outline" href="Rushikapanthula__resume.pdf" download>Download Resume</a>
+  <!-- CONTACT -->
+  <section id="contact" class="section contact-section">
+    <div class="wrap">
+      <h2>Contact</h2>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>Get in touch</h3>
+          <p><i class="fa-solid fa-envelope"></i> panthularushika@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i> +91 98482 79520</p>
+          <div class="social">
+            <a href="https://www.instagram.com/rushikapanthula" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/panthula-rushika-a568a9273" target="_blank"><i class="fab fa-linkedin"></i></a>
           </div>
-
-          <form class="contact-form" name="submit-to-google-sheet">
-            <label>
-              <span>Your name</span>
-              <input type="text" name="Name" required />
-            </label>
-
-            <label>
-              <span>Email</span>
-              <input type="email" name="Email" required />
-            </label>
-
-            <label>
-              <span>Message</span>
-              <textarea name="Message" rows="5"></textarea>
-            </label>
-
-            <button type="submit" class="btn-primary">Send message</button>
-            <div id="form-msg" class="form-msg" aria-live="polite"></div>
-          </form>
         </div>
+        <form class="contact-form" name="submit-to-google-sheet">
+          <label><span>Your name</span><input type="text" name="Name" required></label>
+          <label><span>Email</span><input type="email" name="Email" required></label>
+          <label><span>Message</span><textarea name="Message" rows="5"></textarea></label>
+          <button type="submit" class="btn-primary">Send message</button>
+          <div id="form-msg" class="form-msg"></div>
+        </form>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
 
+  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="wrap">
-      <p>© <span id="year"></span> Panthula Rushika — Built with HTML, CSS & JavaScript</p>
+      <p>© <span id="year"></span> Panthula Rushika — Portfolio</p>
     </div>
   </footer>
-  // NAV Toggle
-const navToggle = document.getElementById('nav-toggle');
-const navList = document.getElementById('nav-list');
-navToggle?.addEventListener('click', () => navList.classList.toggle('show'));
 
-// Close menu on click (mobile)
-document.querySelectorAll('#nav-list a[href^="#"]').forEach(a=>{
-  a.addEventListener('click', ()=>{
-    navList.classList.remove('show');
-  });
-});
+  <!-- ✅ Inlined JavaScript -->
+  <script>
+    // NAV Toggle
+    const navToggle = document.getElementById('nav-toggle');
+    const navList = document.getElementById('nav-list');
+    navToggle?.addEventListener('click', () => navList.classList.toggle('show'));
 
-// Footer year
-document.getElementById('year').textContent = new Date().getFullYear();
-
-// ===== Smooth Scroll + Active Highlight =====
-const sections = document.querySelectorAll("section[id]");
-const navLinks = document.querySelectorAll(".nav-link");
-
-// Smooth scroll when clicking + highlight immediately
-navLinks.forEach(link => {
-  link.addEventListener("click", function(e) {
-    e.preventDefault();
-    // remove old active
-    navLinks.forEach(l => l.classList.remove("active"));
-    // add active to clicked
-    this.classList.add("active");
-
-    // smooth scroll
-    document.querySelector(this.getAttribute("href")).scrollIntoView({
-      behavior: "smooth"
+    // Close menu on click (mobile)
+    document.querySelectorAll('#nav-list a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', ()=> navList.classList.remove('show'));
     });
-  });
-});
 
-// Highlight active link on scroll
-window.addEventListener("scroll", () => {
-  let current = "";
-  sections.forEach(sec => {
-    const top = window.scrollY;
-    const offset = sec.offsetTop - 120; // adjust if header bigger
-    const height = sec.offsetHeight;
-    if (top >= offset && top < offset + height) {
-      current = sec.getAttribute("id");
-    }
-  });
-  navLinks.forEach(link => {
-    link.classList.remove("active");
-    if (link.getAttribute("href") === "#" + current) {
-      link.classList.add("active");
-    }
-  });
-});
-  <script src="script.js"></script>
+    // Footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Smooth Scroll + Active Highlight
+    const sections = document.querySelectorAll("section[id]");
+    const navLinks = document.querySelectorAll(".nav-link");
+
+    navLinks.forEach(link => {
+      link.addEventListener("click", function(e) {
+        e.preventDefault();
+        navLinks.forEach(l => l.classList.remove("active"));
+        this.classList.add("active");
+        document.querySelector(this.getAttribute("href")).scrollIntoView({ behavior: "smooth" });
+      });
+    });
+
+    window.addEventListener("scroll", () => {
+      let current = "";
+      sections.forEach(sec => {
+        const top = window.scrollY;
+        const offset = sec.offsetTop - 120;
+        const height = sec.offsetHeight;
+        if (top >= offset && top < offset + height) {
+          current = sec.getAttribute("id");
+        }
+      });
+      navLinks.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === "#" + current) {
+          link.classList.add("active");
+        }
+      });
+    });
+  </script>
 </body>
-
 </html>
